@@ -8,7 +8,7 @@ public class ButtonDrag_Sarthak : MonoBehaviour, IBeginDragHandler, IDragHandler
 {
     Vector3 storeStartingPos;
     [SerializeField] GameObject comparePoint;
-    [SerializeField] QuizManager_alimentaryCanal quizManagerAlimentaryCanal;
+    //[SerializeField] QuizManager_alimentaryCanal quizManagerAlimentaryCanal;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -31,7 +31,7 @@ public class ButtonDrag_Sarthak : MonoBehaviour, IBeginDragHandler, IDragHandler
 
             comparePoint.GetComponent<Text>().text = this.gameObject.GetComponentInChildren<Text>().text;
             Destroy(this.gameObject);
-            quizManagerAlimentaryCanal.correctAnswerCounter++;
+            //quizManagerAlimentaryCanal.correctAnswerCounter++;
         }
         else
         {
